@@ -15,10 +15,10 @@ ejecutaServicio(function () {
     $isbn = recuperaTexto("isbn");
     $editorial = recuperaTexto("editorial");
    
-    $titulo = validaNombre($titulo);
-    $autor = validaTalla($autor);
-    $isbn = validaTela($isbn);
-    $editorial = validaColor($editorial);
+    $titulo = validaTitulo($titulo);
+    $autor = validaAutor($autor);
+    $isbn = validaIsbn($isbn);
+    $editorial = validaEditorial($editorial);
    
 
  $pdo = Bd::pdo();

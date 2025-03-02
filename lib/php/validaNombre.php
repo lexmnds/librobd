@@ -3,98 +3,98 @@
 require_once __DIR__ . "/BAD_REQUEST.php";
 require_once __DIR__ . "/ProblemDetails.php";
 
-function validaNombre(false|string $nombre)
+function validaTitulo(false|string $titulo)
 {
 
- if ($nombre === false)
+ if ($titulo === false)
   throw new ProblemDetails(
    status: BAD_REQUEST,
-   title: "Falta el nombre.",
-   type: "/error/faltanombre.html",
-   detail: "La solicitud no tiene el valor de nombre."
+   title: "Falta el título.",
+   type: "/error/faltatitulo.html",
+   detail: "La solicitud no tiene el valor de título."
   );
 
- $trimNombre = trim($nombre);
+ $trimTitulo = trim($titulo);
 
- if ($trimNombre === "")
+ if ($trimTitulo === "")
   throw new ProblemDetails(
    status: BAD_REQUEST,
-   title: "Nombre en blanco.",
-   type: "/error/nombreenblanco.html",
-   detail: "Pon texto en el campo nombre.",
+   title: "Título en blanco.",
+   type: "/error/tituloenblanco.html",
+   detail: "Pon texto en el campo título.",
   );
 
- return $trimNombre;
+ return $trimTitulo;
 }
 
-function validaTalla(false|string $talla)
+function validaAutor(false|string $autor)
 {
 
- if ($talla === false)
+ if ($autor === false)
   throw new ProblemDetails(
    status: BAD_REQUEST,
-   title: "Falta el talla.",
-   type: "/error/faltatalla.html",
-   detail: "La solicitud no tiene el valor de talla."
+   title: "Falta el autor.",
+   type: "/error/faltaautor.html",
+   detail: "La solicitud no tiene el valor de autor."
   );
 
- $trimTalla = trim($talla);
+ $trimAutor = trim($autor);
 
- if ($trimTalla === "")
+ if ($trimAutor === "")
   throw new ProblemDetails(
    status: BAD_REQUEST,
-   title: "Talla en blanco.",
-   type: "/error/tallaenblanco.html",
-   detail: "Pon texto en el campo talla.",
+   title: "Autor en blanco.",
+   type: "/error/autorenblanco.html",
+   detail: "Pon texto en el campo autor.",
   );
 
- return $trimTalla;
+ return $trimAutor;
 }
 
-function validaTela(false|string $tela)
+function validaIsbn(false|string $isbn)
 {
 
- if ($tela === false)
+ if ($isbn === false)
   throw new ProblemDetails(
    status: BAD_REQUEST,
-   title: "Falta el tela.",
-   type: "/error/faltatela.html",
-   detail: "La solicitud no tiene el valor de tela."
+   title: "Falta el isbn.",
+   type: "/error/faltaisbn.html",
+   detail: "La solicitud no tiene el valor de isbn."
   );
 
- $trimTela = trim($tela);
+ $trimIsbn = trim($isbn);
 
- if ($trimTela === "")
+ if ($trimIsbn === "")
   throw new ProblemDetails(
    status: BAD_REQUEST,
-   title: "Tela en blanco.",
-   type: "/error/telaenblanco.html",
-   detail: "Pon texto en el campo nombre.",
+   title: "Isbn en blanco.",
+   type: "/error/isbnenblanco.html",
+   detail: "Pon texto en el campo isbn.",
   );
 
- return $trimTela;
+ return $trimIsbn;
 }
 
-function validaColor(false|string $color)
+function validaEditorial(false|string $editorial)
 {
 
- if ($color === false)
+ if ($editorial === false)
   throw new ProblemDetails(
    status: BAD_REQUEST,
-   title: "Falta el color.",
-   type: "/error/faltacolor.html",
-   detail: "La solicitud no tiene el valor de color."
+   title: "Falta la editorial.",
+   type: "/error/faltaeditorial.html",
+   detail: "La solicitud no tiene el valor de editorial."
   );
 
- $trimColor = trim($color);
+ $trimeditorial = trim($editorial);
 
- if ($trimColor === "")
+ if ($trimeditorial === "")
   throw new ProblemDetails(
    status: BAD_REQUEST,
-   title: "Color en blanco.",
-   type: "/error/colorenblanco.html",
-   detail: "Pon texto en el campo color.",
+   title: "Editorial en blanco.",
+   type: "/error/editorialenblanco.html",
+   detail: "Pon texto en el campo editorial.",
   );
 
- return $trimColor;
+ return $trimeditorial;
 }

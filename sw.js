@@ -15,7 +15,7 @@
  * conoce como número menor y se cambia cuando se realizan
  * modificaciones menores.
  */
-const VERSION = "1.00";
+const VERSION = "1.01";
 
 /**
  * Nombre de la carpeta de caché.
@@ -43,7 +43,6 @@ const ARCHIVOS = [
 	"css/transicion_completa.css",
 	"css/transicion_pestanas.css",
 	"img/icono2048.png",
-	"img/img_cards.jpeg",
 	"img/maskable_icon.png",
 	"img/maskable_icon_x128.png",
 	"img/maskable_icon_x192.png",
@@ -83,14 +82,17 @@ const ARCHIVOS = [
 	"lib/fonts/roboto-v32-latin-regular.woff2",
 	"lib/js/abreElementoHtml.js",
 	"lib/js/cierraElementoHtmo.js",
+	"lib/js/consumeJson.js",
 	"lib/js/exportaAHtml.js",
 	"lib/js/getAttribute.js",
 	"lib/js/htmlentities.js",
 	"lib/js/muestraError.js",
+	"lib/js/muestraObjeto.js",
 	"lib/js/muestraTextoDeAyuda.js",
 	"lib/js/ProblemDetails.js",
 	"lib/js/querySelector.js",
 	"lib/js/resaltaSiEstasEn.js",
+	"lib/js/submitForm.js",
 	"lib/js/const/ES_APPLE.js",
 	"lib/js/custom/md-menu-button.js",
 	"lib/js/custom/md-options-menu.js",
@@ -108,10 +110,9 @@ const ARCHIVOS = [
 	"material-tokens/css/shape.css",
 	"material-tokens/css/state.css",
 	"material-tokens/css/typography.css",
-    "material-tokens/css/theme/dark.css",
-    "material-tokens/css/theme/light.css",
-	"ungap/custom-elements.js",
-	"/",
+	"material-tokens/css/theme/dark.css",
+	"material-tokens/css/theme/light.css",
+	"ungap/custom-elements.js"
 ];
 
 // Verifica si el código corre dentro de un service worker.
